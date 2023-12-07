@@ -20,7 +20,8 @@ class NavTab extends StatelessWidget {
     return Expanded(
       child: GestureDetector(
         onTap: () => onTap(),
-        child: Center(
+        child: Container(
+          alignment: Alignment.center,
           child: AnimatedOpacity(
             duration: const Duration(microseconds: 300),
             opacity: isSelected ? 1 : 0.6,

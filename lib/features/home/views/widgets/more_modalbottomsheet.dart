@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_w10_d24_bottomsheet/constants/gaps.dart';
 import 'package:flutter_w10_d24_bottomsheet/constants/sizes.dart';
 import 'package:flutter_w10_d24_bottomsheet/features/home/views/widgets/report_modalmottomsheet.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MoreModalbottomsheet extends StatelessWidget {
   const MoreModalbottomsheet({super.key});
@@ -49,11 +48,14 @@ class MoreModalbottomsheet extends StatelessWidget {
                         left: Sizes.size20,
                         right: Sizes.size20,
                       ),
-                      child: Text(
-                        "Unfollow",
-                        style: TextStyle(
-                          fontSize: Sizes.size20,
-                          fontWeight: FontWeight.w600,
+                      child: SizedBox(
+                        width: double.maxFinite,
+                        child: Text(
+                          "Unfollow",
+                          style: TextStyle(
+                            fontSize: Sizes.size20,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ),
@@ -65,11 +67,14 @@ class MoreModalbottomsheet extends StatelessWidget {
                         left: Sizes.size20,
                         right: Sizes.size20,
                       ),
-                      child: Text(
-                        "Mute",
-                        style: TextStyle(
-                          fontSize: Sizes.size20,
-                          fontWeight: FontWeight.w600,
+                      child: SizedBox(
+                        width: double.maxFinite,
+                        child: Text(
+                          "Mute",
+                          style: TextStyle(
+                            fontSize: Sizes.size20,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ),
@@ -92,11 +97,14 @@ class MoreModalbottomsheet extends StatelessWidget {
                         left: Sizes.size20,
                         right: Sizes.size20,
                       ),
-                      child: Text(
-                        "Hide",
-                        style: TextStyle(
-                          fontSize: Sizes.size20,
-                          fontWeight: FontWeight.w600,
+                      child: SizedBox(
+                        width: double.maxFinite,
+                        child: Text(
+                          "Hide",
+                          style: TextStyle(
+                            fontSize: Sizes.size20,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ),
@@ -110,12 +118,15 @@ class MoreModalbottomsheet extends StatelessWidget {
                           left: Sizes.size20,
                           right: Sizes.size20,
                         ),
-                        child: Text(
-                          "Report",
-                          style: TextStyle(
-                              fontSize: Sizes.size20,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.red),
+                        child: SizedBox(
+                          width: double.maxFinite,
+                          child: Text(
+                            "Report",
+                            style: TextStyle(
+                                fontSize: Sizes.size20,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.red),
+                          ),
                         ),
                       ),
                     ),

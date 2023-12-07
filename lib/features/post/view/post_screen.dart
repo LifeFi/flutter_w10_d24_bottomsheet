@@ -2,9 +2,8 @@ import 'package:faker/faker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_w10_d24_bottomsheet/constants/gaps.dart';
 import 'package:flutter_w10_d24_bottomsheet/constants/sizes.dart';
-import 'package:flutter_w10_d24_bottomsheet/utils.dart';
+import 'package:flutter_w10_d24_bottomsheet/features/home/views/widgets/feeds_data.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:transparent_image/transparent_image.dart';
 
 final Map<String, dynamic> user = {
   "id": random.integer(1000000),
@@ -36,6 +35,13 @@ class _PostScreenState extends State<PostScreen> {
   }
 
   _onPostTap() {
+    feedsData.post(
+      id: user["id"],
+      name: user["name"],
+      avatar: user["avatar"],
+      content: _controller.text,
+    );
+
     Navigator.of(context).pop(true);
   }
 
@@ -163,6 +169,7 @@ class _PostScreenState extends State<PostScreen> {
                                 ),
                                 TextField(
                                   controller: _controller,
+                                  autofocus: true,
                                   maxLines: null,
                                   decoration: const InputDecoration(
                                     isDense: true,
