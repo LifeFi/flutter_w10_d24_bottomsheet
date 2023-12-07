@@ -69,6 +69,7 @@ class _InterestsScreenPart2State extends State<InterestsScreenPart2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: FaIcon(
           FontAwesomeIcons.twitter,
           size: Sizes.size36,

@@ -9,6 +9,7 @@ class OnboardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: FaIcon(
           FontAwesomeIcons.twitter,
           size: Sizes.size36,

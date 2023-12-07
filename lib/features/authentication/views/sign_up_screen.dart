@@ -123,6 +123,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
       child: Scaffold(
         // resizeToAvoidBottomInset: false,
         appBar: AppBar(
+          backgroundColor: Colors.white,
           leading: GestureDetector(
             onTap: () => Navigator.pop(context),
             child: const Padding(
